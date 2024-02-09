@@ -1,0 +1,18 @@
+{
+  "tasklist": [
+    {
+      "lista de tarefas": {
+        "description": "editando a tarefa",
+        "initial_date": "2024-02-08",
+        "deadline": "não tem prazo definido"
+      }
+    },
+    {
+      "segunda tarefa": {
+        "description": "teste",
+        "initial_date": "2024-02-09",
+        "deadline": "nao definido"
+      }
+    }
+  ]
+}
