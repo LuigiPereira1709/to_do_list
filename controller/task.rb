@@ -23,6 +23,12 @@ class Task
       post_task(:edit, task_choose, field_choose, content)
     end
 
+    def delete(task)
+      json_file = read_json['tasklist']
+      delete_task = json_file.delete_at(task)
+      save(json_file)
+    end
+
     def read_json
       json_file = JSON.parse(File.read('./data.json'))
     end
