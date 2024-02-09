@@ -24,8 +24,9 @@ class Task
     end
 
     def delete(task)
-      json_file = read_json['tasklist']
-      delete_task = json_file.delete_at(task)
+      json_file = read_json
+      tasklist = json_file['tasklist']
+      delete_task = tasklist.delete_at(task)
       save(json_file)
     end
 
